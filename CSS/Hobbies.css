@@ -333,6 +333,11 @@ strong {
     nav ul li {
         margin: 0 40px; 
     }
+    #logo{
+        border-radius: 70px;
+        height: 70px;
+        width: 70px;
+    }
     header h1{
         margin-left: 200px;
     }
@@ -431,6 +436,11 @@ strong {
     }
     nav ul li {
         margin: 0 40px; 
+    }
+    #logo{
+        border-radius: 70px;
+        height: 70px;
+        width: 70px;
     }
     header h1{
         margin-left: 200px;
