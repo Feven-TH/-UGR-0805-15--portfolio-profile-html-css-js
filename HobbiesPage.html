@@ -8,136 +8,195 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./CSS/Hobbies.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Poppins:wght@400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <a href="HomePage.html" title="Go to Home Page">
-        <img src="Images/Logo.png" alt="Logo" />
-      </a>
-      <nav class="nav links">
-        <ul>
-          <li><a href="EducationPage.html">Education</a></li>
-          <li><a href="HobbiesPage.html">Hobbies</a></li>
-          <li><a href="CVPage.html">CV</a></li>
-          <li>
-            <a href="InterestsAndAdventures.html">Interests and Adventures</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="top">
+        <a href="HomePage.html" title="Go to Home Page">
+          <img id="logo" src="Images/Logo.png" alt="Go to Home Page" />
+        </a>
+        <i id="menu" class="ri-menu-line"></i>
+        <nav id="nav" class="navs">
+          <ul>
+            <li><a href="EducationPage.html">Education</a></li>
+            <li><a href="HobbiesPage.html">Hobbies</a></li>
+            <li><a href="CVPage.html">CV</a></li>
+            <li>
+              <a href="InterestsAndAdventures.html">Interests and Adventures</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <h1>My Hobbies</h1>
     </header>
+  <main>
+    <div class="Hobbies">
+      <div class="column1">
+        <section class="hobby" id="spiritual-service">
+          <div class="textC">
+            <p>
+              <img
+                class="imgc"
+                src="Images/photo_2024-11-23_13-30-01.jpg"
+                alt="church"
+              />
+              <h2>Spiritual Service</h2>
+              Spiritual service is an important part of my life. I’m involved in church
+              activities like group prayers, Bible studies, & discussions, and I’m
+              always learning through the courses I take at church. Serving others in my
+              community has been a rewarding experience, & it’s helped me strengthen my
+              faith while building deeper connections with those around me.
+            </p>
+          </div>
+          
+        </section>
 
-    <section id="spiritual-service">
-      <h3>Spiritual Service</h3>
-      <img src="Images/photo_2024-11-23_13-30-01.jpg" alt="church" />
-      <p>
-        Spiritual service is an important part of my life. I’m involved in
-        church activities like group prayers, Bible studies, and discussions,
-        and I’m always learning through the courses I take at church. Serving
-        others in my community has been a rewarding experience, and it’s helped
-        me strengthen my faith while building deeper connections with those
-        around me.
-      </p>
-    </section>
-
-    <section id="books">
-      <h3>Books</h3>
-      <img src="Images/OIP.jpg" alt="book" />
-      <p>
-        Reading has always been a way for me to escape into new worlds and
-        expand my mind. Whether it’s a gripping novel, an insightful history
-        book, or a spiritual writing, I love how books can transport me and
-        offer new perspectives. Some authors have really stuck with me, shaping
-        how I see the world.
-      </p>
-    </section>
-
-    <section id="movies">
-      <h3>Movies</h3>
-      <img src="Images/photo_2024-11-23_12-51-37.jpg" alt="movie" />
-      <p>
-        Watching movies is one of my favorite pastimes. I enjoy a mix of genres,
-        but I especially love thrillers, mystery, thought-provoking themes, or
-        moments of joy and laughter. Classic Hollywood films and early 2000s
-        movies often captivate me the most.
-      </p>
-    </section>
-
-    <section id="discussion">
-      <h3>Discussions</h3>
-      <img src="Images/ua8fjfif.png" alt="discussion" />
-      <p>
-        I enjoy meaningful discussions on societal, cultural, spiritual,
-        political, and historical topics. Debating ideas challenges me to think
-        critically and deepen my understanding of the world. Listening to
-        podcasts sparks new ideas and broadens my knowledge. However, it’s the
-        conversations and debates that truly energize and help me grow.
-      </p>
-    </section>
-
-    <section id="gallery">
+        <section class="hobby" id="books">
+          <div class="image-containerS" >
+            <img class="img" id="imgB" src="Images/OIP.jpg" alt="book" />
+          </div>
+          <div class="text-container">
+            <h3>Books</h3>
+            <p>
+              Reading has always been a way for me to escape into new worlds and
+              expand my mind. Whether it’s a gripping novel, an insightful
+              history book, or a spiritual writing, I love how books can
+              transport me and offer new perspectives. Some authors have really
+              stuck with me, shaping how I see the world.
+            </p>
+          </div>
+        </section>
+      </div>
+      <div class="column2">
+        <section class="hobby" id="movies">
+          <div class="image-containerS">
+            <img
+              class="img" id="imgM"
+              src="Images/photo_2024-11-23_12-51-37.jpg"
+              alt="movie"
+            />
+          </div>
+          <div class="text-container">
+            <h3>Movies</h3>
+            <p>
+              Watching movies is one of my favorite past times. I enjoy a mix of
+              genres, but I especially love thrillers, mystery,
+              thought-provoking themes, or moments of joy and laughter. Classic
+              Hollywood films & early 2000s movies often captivate me the
+              most.
+            </p>
+          </div>
+        </section>
+        <section class="hobby" id="discussion">
+          <div class="textC">
+            <p>
+              <img
+              id="disc"
+              class="imgc"
+              src="Images/ua8fjfif.png"
+              alt="discussion"
+            />
+              <h3>Discussions</h3>
+              I enjoy meaningful discussions on societal, cultural, spiritual,
+              political, and historical topics. Debating ideas challenges me to
+              think critically and deepen my understanding of the world.
+              Listening to podcasts sparks new ideas and broadens my knowledge.
+              However, it’s the conversations and debates that truly energize
+              and help me grow.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <section class="gallery" id="gallery">
       <h3>Gallery</h3>
-      <img src="Images/gallery3.jpg" alt="" />
-      <img src="Images/gallery1.jpg" alt="" />
-      <img src="Images/Gallery2.jpg" alt="" />
-      <img src="Images/gal.jpg" alt="" />
+      <div class="photos">
+        <div class="row1">
+          <img src="Images/gallery3.jpg" alt="" />
+          <img src="Images/gal.jpg" alt="" />
+        </div>
+        <div class="row2">
+          <img src="Images/Gallery2.jpg" alt="" />
+          <img src="Images/gallery1.jpg" alt="" />
+        </div>
+      </div>
     </section>
 
     <section id="Quotes">
       <h3>Favorite Verses and Quotes</h3>
-      <q>
-        As the deer pants for the streams of water, so my soul pants for you, my
-        God.
-      </q>
-      <br />
-      <strong>- Psalms 42:1</strong>
-      <br />
-      <q>
-        There is a God-shaped vacuum in every man which only Christ can fill.
-      </q>
-      <br />
-      <strong>- St. Augustine</strong>
-      <br />
-      <q>
-        No one can heal my disease except He who knows the depth of the
-        heart.</q
-      >
-      <br />
-      <strong>- St. Augustine</strong>
-      <br />
-      <q> Love is never wasted, for its value doesn't rest upon reciprocity.</q>
-      <br />
-      <strong>- C.S. Lewis</strong>
+      <div class="Quotes">
+        <div class="columnA">
+          <div class="quote-item">
+            <q>
+              As the deer pants for the streams of water, so my soul pants for
+              you, my God.
+            </q>
+            <br />
+            <strong>- Psalms 42:1</strong>
+            <br />
+          </div>
+          <div class="quote-item">
+            <q>
+              There is a God-shaped vacuum in every man which only Christ can
+              fill.
+            </q>
+            <br />
+            <strong>- St. Augustine</strong>
+            <br />
+          </div>
+        </div>
+        <div class="columnB">
+          <div class="quote-item">
+            <q>
+              No one can heal my disease except He who knows the depth of the
+              heart.</q
+            >
+            <br />
+            <strong>- St. Augustine</strong>
+            <br />
+          </div>
+          <div class="quote-item">
+            <q>
+              Love is never wasted, for its value doesn't rest upon
+              reciprocity.</q
+            >
+            <br />
+            <strong>- C.S. Lewis</strong>
+          </div>
+        </div>
+      </div>
     </section>
-
+  </main>
     <footer>
-      <p><b>Feel free to reach out via the channels below:</b></p>
-      <ul>
+      <p>Feel free to reach out via the channels below:</p>
+      <ul class="contacts">
         <li>
-          <a href="mailto:fevente65@gmail.com" target="_blank">
+          <a href="mailto:fevente65@gmail.com" target="_blank" aria-label="Send email to fevente65@gmail.com">
             <i class="ri-mail-line"></i>
           </a>
         </li>
         <li>
-          <a
-            href="https://www.linkedin.com/in/feven-tewelde-943a842b9/"
-            target="_blank"
-            ><i class="ri-linkedin-line"></i
-          ></a>
+          <a href="https://www.linkedin.com/in/feven-tewelde-943a842b9/" target="_blank" aria-label="Visit Feven's LinkedIn profile">
+            <i class="ri-linkedin-line"></i>
+          </a>
         </li>
         <li>
-          <a href="https://github.com/Feven-TH" target="_blank"
-            ><i class="ri-github-line"></i
-          ></a>
+          <a href="https://github.com/Feven-TH" target="_blank" aria-label="Visit Feven's GitHub profile">
+            <i class="ri-github-line"></i>
+          </a>
         </li>
         <li>
-          <a
-            href="https://x.com/fevent712?t=Bc_jmcdd7K0Tg00lYVHC2A&s=35"
-            target="_blank"
-            ><i class="ri-twitter-line"></i
-          ></a>
+          <a href="https://x.com/fevent712?t=Bc_jmcdd7K0Tg00lYVHC2A&amp;s=35" target="_blank" aria-label="Visit Feven's Twitter profile">
+            <i class="ri-twitter-line"></i>
+          </a>
         </li>
       </ul>
     </footer>
+    <script src="JS/script.js"></script>
   </body>
 </html>

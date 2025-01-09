@@ -8,123 +8,150 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./CSS/CV.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Poppins:wght@400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <a href="HomePage.html" title="Go to Home Page">
-        <img src="Images/Logo.png" alt="Logo" />
-      </a>
-      <nav class="nav links">
-        <ul>
-          <li><a href="EducationPage.html">Education</a></li>
-          <li><a href="HobbiesPage.html">Hobbies</a></li>
-          <li><a href="CVPage.html">CV</a></li>
-          <li>
-            <a href="InterestsAndAdventures.html">Interests and Adventures</a>
-          </li>
-        </ul>
-      </nav>
-      <h2>Feven Tewelde</h2>
-      <h3>Software Engineering Student</h3>
-      <img src="Images/photo_2024-11-23_10-03-53.jpg" alt="Profile" />
-      <p>
-        Dedicated software engineering student passionate about learning and
-        problem-solving. Experienced in collaborative work, leadership roles,
-        and building impactful projects.
-      </p>
+      <div class="top">
+        <a href="HomePage.html" title="Go to Home Page">
+          <img id="logo" src="Images/Logo.png" alt="Go to Home Page" />
+        </a>
+        <i id="menu" class="ri-menu-line"></i>
+        <nav id="nav" class="navs">
+          <ul>
+            <li><a href="EducationPage.html">Education</a></li>
+            <li><a href="HobbiesPage.html">Hobbies</a></li>
+            <li><a href="CVPage.html">CV</a></li>
+            <li>
+              <a href="InterestsAndAdventures.html">Interests and Adventures</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="hcontent">
+        <h2>Feven Tewelde</h2>
+        <div class="text">
+          <p>
+            <img
+              id="Profile"
+              src="Images/photo_2024-11-23_10-03-53.jpg"
+              alt="Profile"
+            />
+            Dedicated software engineering student passionate about learning and
+            problem-solving. Experienced in collaborative work, leadership
+            roles, and building impactful projects.
+          </p>
+        </div>
+      </div>
     </header>
-    <section id="skills">
-      <h2>Skills</h2>
-      <h3>Hard Skills</h3>
-      <ul>
-        <li>Programming & Development</li>
-        <li>Data Analytics</li>
-        <li>Data Structures & Algorithms</li>
-        <li>Web Development</li>
-        <li>Object-Oriented Programming (OOP)</li>
-      </ul>
-      <h3>Soft Skills</h3>
-      <ul>
-        <li>Leadership</li>
-        <li>Teamwork</li>
-        <li>Communication</li>
-        <li>Problem-Solving</li>
-        <li>Adaptability</li>
-      </ul>
-    </section>
-    <section class="work-experience">
-      <h3>Work Experience</h3>
-      <table>
-        <tr>
-          <th>Position</th>
-          <th>Details</th>
-        </tr>
-        <tr>
-          <td>Tutor</td>
-          <td>Tutored one Grade 8 student remotely.</td>
-        </tr>
-        <tr>
-          <td>Tutor</td>
-          <td>Tutored one Grade 7 student in person.</td>
-        </tr>
-        <tr>
-          <td>Tutor</td>
-          <td>Tutored two Grade 8 students in person.</td>
-        </tr>
-      </table>
-    </section>
-    <section class="notable-achievements">
-      <h2>Notable Achievements</h2>
-      <ul>
-        <li>
-          Ranked in the top 1% of 986,000+ examinees in Ethiopia's national exam
-        </li>
-        <li>
-          Secured 1st place in the Ethiopian National Spelling Bee Competition
-        </li>
-        <li>Received multiple high school awards for academic excellence</li>
-        <li>
-          Actively participated in and contributed to community STEM workshops
-        </li>
-        <li>
-          Represented school in regional and national general knowledge
-          competitions
-        </li>
-      </ul>
-    </section>
-    <button
-      onclick="alert('Thank you for your interest in my CV. Please contact me at fevente65@gmail.com to receive a copy of my Resume.')"
-    >
-      Request Resume
-    </button>
+    <main>
+      <div id="title"><h2>Skills</h2></div>
+      <div class="skills">
+        <div class="HardSkills">
+          <h3>Hard Skills</h3>
+          <ul>
+            <li>Programming & Development</li>
+            <li>Data Analytics</li>
+            <li>Data Structures & Algorithms</li>
+            <li>Web Development</li>
+            <li>Object-Oriented Programming (OOP)</li>
+          </ul>
+        </div>
+        <div class="SoftSkills">
+          <h3>Soft Skills</h3>
+          <ul>
+            <li>Leadership</li>
+            <li>Teamwork</li>
+            <li>Communication</li>
+            <li>Problem-Solving</li>
+            <li>Adaptability</li>
+          </ul>
+        </div>
+      </div>
+      <div class="work_achievemnts">
+        <div class="work-experience">
+          <h2>Work Experience</h2>
+          <table>
+            <tr>
+              <th>Position</th>
+              <th>Details</th>
+            </tr>
+            <tr>
+              <td>Tutor</td>
+              <td>Tutored one Grade 8 student remotely.</td>
+            </tr>
+            <tr>
+              <td>Tutor</td>
+              <td>Tutored one Grade 7 student in person.</td>
+            </tr>
+            <tr>
+              <td>Tutor</td>
+              <td>Tutored two Grade 8 students in person.</td>
+            </tr>
+          </table>
+        </div>
+        <div class="notable-achievements">
+          <h2>Notable Achievements</h2>
+          <ul>
+            <li>
+              Ranked in the top 1% of 986,000+ examinees in Ethiopia's national
+              exam
+            </li>
+            <li>
+              Secured 1st place in the Ethiopian National Spelling Bee
+              Competition
+            </li>
+            <li>
+              Received multiple high school awards for academic excellence
+            </li>
+            <li>
+              Actively participated in and contributed to community STEM
+              workshops
+            </li>
+            <li>
+              Represented school in regional and national general knowledge
+              competitions
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="Buttons">
+        <button id="request-resume"
+          onclick="alert('Thank you for your interest in my CV. Please contact me at fevente65@gmail.com to receive a copy of my Resume.')"
+        >
+          Request Resume
+        </button>
+      </div>
+    </main>
     <footer>
       <p><b>Feel free to reach out via the channels below:</b></p>
-      <ul>
+      <ul class="contacts">
         <li>
-          <a href="mailto:fevente65@gmail.com" target="_blank">
+          <a href="mailto:fevente65@gmail.com" target="_blank" aria-label="Send email to fevente65@gmail.com">
             <i class="ri-mail-line"></i>
           </a>
         </li>
         <li>
-          <a
-            href="https://www.linkedin.com/in/feven-tewelde-943a842b9/"
-            target="_blank"
-            ><i class="ri-linkedin-line"></i
-          ></a>
+          <a href="https://www.linkedin.com/in/feven-tewelde-943a842b9/" target="_blank" aria-label="Visit Feven's LinkedIn profile">
+            <i class="ri-linkedin-line"></i>
+          </a>
         </li>
         <li>
-          <a href="https://github.com/Feven-TH" target="_blank"
-            ><i class="ri-github-line"></i
-          ></a>
+          <a href="https://github.com/Feven-TH" target="_blank" aria-label="Visit Feven's GitHub profile">
+            <i class="ri-github-line"></i>
+          </a>
         </li>
         <li>
-          <a
-            href="https://x.com/fevent712?t=Bc_jmcdd7K0Tg00lYVHC2A&s=35"
-            target="_blank"
-            ><i class="ri-twitter-line"></i
-          ></a>
+          <a href="https://x.com/fevent712?t=Bc_jmcdd7K0Tg00lYVHC2A&amp;s=35" target="_blank" aria-label="Visit Feven's Twitter profile">
+            <i class="ri-twitter-line"></i>
+          </a>
         </li>
       </ul>
     </footer>
+    <script src="JS/script.js"></script>
   </body>
 </html>

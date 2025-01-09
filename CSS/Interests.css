@@ -1,0 +1,662 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/**Header **/
+
+header{
+    background-color:#1B2834;
+    padding-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out; 
+}
+#logo{
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    margin: 30px;
+}
+.ri-menu-line{
+    height: 1000px;
+    width: 50px;
+    margin: 30px;
+    font-size: 40px;
+    color: #F1DFC5;
+    cursor: pointer;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+}
+header h1{
+    margin: 60px 20px 5px 100px;
+}
+.navs{
+    display: none;
+    background-color: rgba(44, 62, 80, 0.541); 
+    position: absolute;
+    top: 90px;
+    right: 0;
+    width: 20%;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease;
+}
+#nav.active {
+    display: block;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+}
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: #F1DFC5;
+    text-decoration: none;
+    font-size: 16px;
+}
+h1{
+    padding: 3px 15px;
+    font-size: 24px;
+}
+#Quote{
+    padding: 0px 10px 20px 110px;
+}
+#Quote p{
+    padding-left: 40px;
+}
+#video{
+    width: 50%;
+    height: auto;
+    padding-bottom: 15px;
+}
+.video{
+    display: flex;
+    justify-content: center;
+}
+/**Body styling**/
+
+h1, h2, h3{
+    font-family: 'Poppins', sans-serif;
+    color: #F1DFC5;
+    font-weight: bold;
+    padding: 20px 0 20px 0;
+}
+h1{
+    font: size 24px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #F2F2F2;
+    font-weight: 500;
+    background-color: #1F2E3D;
+    transition: background-color 0.5s ease-in-out;
+}
+p{
+    font-family: roboto;
+    color: #F2F2F2;
+    font-size: 10px;
+    line-height: 150%;
+    font-weight:500 ;
+}
+main{
+    padding: 5px 40px;
+}
+.images{
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    filter: blur(0.03px);
+    opacity: 0.7;
+}
+#imgW{
+    width: 50%;
+    height: auto;
+}
+.image {
+    text-align: center; 
+    padding: 30px 10px 10px 10px ;
+}
+
+.Wenchi a{
+    text-decoration: none;
+    color: #F1DFC5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+}
+#imgS{
+    width: 50%;
+    height: auto;
+}
+.Suba a{
+    text-decoration: none;
+    color: #F1DFC5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+}
+#imgE{
+    width: 100%;
+    height: 50%;
+}
+.img-aud{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+audio::-webkit-media-controls-panel {
+    background-color: #F1DFC5;
+  }
+.Reflection{
+    padding: 20px 5px 10px 5px;
+}
+.audio h4{
+    padding: 10px 5px 5px 0px;
+}
+.audios h4 {
+    margin-bottom: 15px;
+  }
+.historical{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.historical h3{
+    padding-bottom: 0px;
+}
+#imgH{
+    width:auto ;
+    height: 200px;
+}
+.Bucket ul{
+    padding-left: 70px;
+}
+.Bucket{
+    padding-bottom: 40px;
+}
+/**footer style**/
+
+footer{
+    background-color: #1B2834;
+    padding: 10px 50px 10px 80px;
+}
+footer p{
+    font-weight: 500;
+    font-size: larger;
+}
+.contacts li {
+    list-style-type: none; 
+  }
+.contacts li a{
+    list-style-type: none;
+    color: #F1DFC5;
+    width: 24px;
+    height: auto;
+    font-size: 40px;
+    text-decoration: none;
+}
+.contacts {
+    margin: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/**Mobile Landscape**/
+@media screen and (min-width: 550px) and (max-width: 850px) {
+    #logo{
+        border-radius: 60px;
+        height: 60px;
+        width: 60px;
+    }
+    .ri-menu-line{
+        font-size: 60px;
+    }
+    #Quote{
+        padding-left: 150px;
+    }
+    .Wenchi, .Suba{
+        display: flex;
+        align-items: center;
+    }
+    .image {
+        width: 150%;
+        margin-right: 10px;
+    }
+    .text {
+        flex-grow: 1;
+        margin-left: 10px; /* Allow text container to grow to fill remaining space */
+      }
+    #imgW, #imgS{
+        width: 110%;
+        height: auto;
+    }
+    .Suba .image {
+        width: 200%;
+        margin-right: 20px;
+    }
+    #imgS{
+        width: 120%;
+        height: auto;
+        margin-right: 20px;
+    }
+    p{
+        font-size: 12px;
+        line-height: 150%;
+        font-weight:0%;
+    }
+    .Pilgrimages{
+        display: flex;
+        justify-content: space-between;
+    }
+    #imgE{
+        width: auto;
+        height: 200px;
+        margin-right: 0px;
+    }
+  
+    .img-aud{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        margin: 10px 0px;
+    }
+      audio {
+        width: 200px; 
+        height: 60px; 
+      }
+      .historical {
+        display: flex; 
+        flex-direction: row;
+        gap: 0px; 
+      }
+      .imageh {
+        width: 100%;
+        margin-right: 20px;
+    }
+    p{
+        font-size: 14px;
+        line-height: 150%;
+    }
+}
+
+    /***Tablet Portrait**/
+@media screen and (min-width:851px) and (max-width: 1000px)  {
+    #logo{
+        border-radius: 70px;
+        height: 70px;
+        width: 70px;
+    }
+    .ri-menu-line{
+        font-size: 70px;
+        margin-top: 60px;
+    }
+    #Quote{
+        padding-left: 200px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 18px;
+    }
+    .Wenchi, .Suba{
+        display: flex;
+        align-items: center;
+    }
+    .image {
+        width: 150%;
+        margin-right: 60px;
+    }
+    .text {
+        flex-grow: 1;
+        margin-left: 10px; /* Allow text container to grow to fill remaining space */
+      }
+    #imgW, #imgS{
+        width: 110%;
+        height: auto;
+    }
+    .Suba .image {
+        width: 200%;
+        margin-right:60px;
+    }
+    #imgS{
+        width: 120%;
+        height: auto;
+        margin-right: 50px;
+    }
+    p{
+        font-size: 12px;
+        line-height: 150%;
+        font-weight:0%;
+    }
+    .Pilgrimages{
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 80px;
+    }
+    #imgE{
+        width: auto;
+        height: 200px;
+    }
+  
+    .img-aud{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        margin: 10px 0px;
+    }
+      audio {
+        width: 200px; 
+        height: 60px; 
+      }
+      .historical {
+        display: flex; 
+        flex-direction: row;
+        gap: 0px; 
+        margin: 5px 100px;
+      }
+      .imageh {
+        width: 100%;
+        margin-right: 20px;
+    }
+    p{
+        font-size: 14px;
+        line-height: 150%;
+    }
+    .Bucket{
+        margin-left: 30PX;
+    }
+}
+
+/**Tablet Landscape**/
+@media screen and (min-width: 1001px) and (max-width: 1280px) {
+    #menu {
+        display: none; 
+    }
+    .navs {
+        display: block; 
+        position: static; 
+        background-color: transparent; 
+        box-shadow: none; 
+        width: auto; 
+        margin: 20px;
+        padding: 20px;
+    }
+    nav ul {
+        flex-direction: row; 
+        justify-content: space-around;
+    }
+    nav ul li {
+        margin: 0 30px; 
+    }
+    #logo{
+        border-radius: 70px;
+        height: 70px;
+        width: 70px;
+    }
+    #Quote{
+        padding-left: 300px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 18px;
+    }
+    
+    .HikingTrips{
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 18px;
+    }
+    .Wenchi, .Suba{
+        display: flex;
+        align-items: center;
+    }
+    .image {
+        width: 500%;
+        margin-right: 10px;
+    }
+    .text {
+        flex-grow: 1;
+        margin-left: 10px; /* Allow text container to grow to fill remaining space */
+      }
+    
+    #imgW, #imgS{
+        width: 110%;
+        height: auto;
+    }
+    .Suba .image {
+        width: 350%;
+        margin-right:25px;
+    }
+    #imgS{
+        width: 120%;
+        height: auto;
+        margin-right: 50px;
+    }
+    .fig{
+        width: 50%;
+   
+    }
+    #imgE{
+        width: 60%;
+        height: auto;
+    }
+    audio {
+        width: 200px; 
+        height: 60px; 
+      }
+      .Reflection{
+        width: 30%;
+      }
+      .imagesh{
+        border-radius: 5px; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+        opacity: 0.7;
+    }
+    .img-aud{
+        display: flex;
+        flex-direction: row;
+       
+        margin: 10px 0px;
+    }
+    .Pilgrimages{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .Reflection p, .historical p{
+        font-size: 15px;
+        line-height: 140%;
+    }
+    .HandB{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .History{
+        width: 70% ;
+    }
+    .historical {
+        display: flex; 
+        flex-direction: row;
+        gap: 0px; 
+        margin: 5px 10px;
+      }
+      .Bucket ul li {
+        margin-bottom: 10px;
+      }
+}
+/**Desktop**/
+@media screen and (min-width: 1281px){
+    #menu {
+        display: none; 
+    }
+    .navs {
+        display: block; 
+        position: static; 
+        background-color: transparent; 
+        box-shadow: none; 
+        width: auto; 
+        margin: 20px;
+        padding: 20px;
+    }
+    nav ul {
+        flex-direction: row; 
+        justify-content: space-around;
+    }
+    nav ul li {
+        margin: 0 60px; 
+    }
+    #logo{
+        border-radius: 70px;
+        height: 70px;
+        width: 70px;
+    }
+    #Quote{
+        padding-left: 300px;
+    }
+    h1{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 28px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    
+    .HikingTrips{
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 18px;
+    }
+    .Wenchi, .Suba{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .image {
+        width: 500%;
+        margin-right: 10px;
+    }
+    .text {
+        flex-grow: 1;
+        margin-left: 3px; 
+      }
+      .HikingTrips .text p {
+        font-size: 14px; 
+      }
+    #imgW, #imgS{
+        width: 100%;
+        height: auto;
+    }
+    .Suba .image {
+        width: 300%;
+        margin: right 0px;
+    }
+    .Suba{
+        margin-left: 40px;
+    }
+    #imgS{
+        width: 100%;
+        height: auto;
+        margin-right: 10px;
+    }
+    .fig{
+        width: 50%;
+   
+    }
+    .Pilgrimages{
+        margin: 10px 70px;
+    }
+    #imgE{
+        width: 80%;
+        height: auto;
+    }
+    audio {
+        width: 200px; 
+        height: 60px; 
+      }
+      .Reflection{
+        width: 30%;
+      }
+      .imagesh{
+        border-radius: 5px; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+        opacity: 0.7;
+    }
+    .img-aud{
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+        margin: 10px 0px;
+    }
+    .Pilgrimages{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .Reflection h4{
+        padding-bottom: 15px;
+    }
+    .Reflection p, .historical p{
+        font-size: 18px;
+        line-height: 160%;
+    }
+    .HandB{
+        display: flex;
+        justify-content: space-between;
+        margin: 50px;
+    }
+    .History{
+        width: 60% ;
+    }
+    .historical {
+        display: flex; 
+        flex-direction: row;
+        gap: 10px; 
+        margin: 5px 10px;
+      }
+      .Bucket ul li {
+        margin-bottom: 10px;
+      }
+}

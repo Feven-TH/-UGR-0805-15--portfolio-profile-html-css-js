@@ -1,0 +1,322 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/**Header **/
+
+header{
+    background-color:#1B2834;
+    padding-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out; 
+}
+#logo{
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    margin: 30px;
+}
+.ri-menu-line{
+    height: 1000px;
+    width: 50px;
+    margin: 30px;
+    font-size: 40px;
+    color: #F1DFC5;
+    cursor: pointer;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+.hcontent{
+   margin: 50px;
+   padding: 10px 50px 30px 50px;
+}
+.hcontent h1{
+    padding-bottom: 15px;
+}
+.navs{
+    display: none;
+    background-color: rgba(44, 62, 80, 0.541); 
+    position: absolute;
+    top: 90px;
+    right: 0;
+    width: 20%;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease;
+}
+#nav.active {
+    display: block;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+}
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: #F1DFC5;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/**Body styling**/
+
+h1, h2, h3{
+    font-family: 'Poppins', sans-serif;
+    color: #F1DFC5;
+    font-weight: bold;
+    padding: 20px 0 20px 0;
+}
+h1{
+    font: size 28px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #F2F2F2;
+    font-weight: 500;
+    background-color: #1F2E3D;
+    transition: background-color 0.5s ease-in-out;
+}
+p{
+    font-family: roboto;
+    color: #F2F2F2;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight:500 ;
+}
+main{
+    padding: auto;
+}
+#profile {
+    border-radius: 3%;
+    box-shadow: #0d5713;
+    width: 300px;  
+    height: auto; 
+    margin-bottom: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+#portfolio—container {
+    display: block; 
+    flex-direction: column; 
+   justify-content: center;
+    align-items: center; 
+    padding: 20px; 
+    text-align: center; 
+  }
+.texts{
+    margin: 10px 50px 10px 80px;
+    padding-bottom: 10px;
+}
+.about{
+    margin: 10px 50px 10px 80px;
+    padding-bottom: 10px;
+}
+#quote {
+    margin-top: 30px;         
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+
+/**footer style**/
+
+footer{
+    background-color: #1B2834;
+    padding: 10px 50px 10px 80px;
+}
+footer p{
+    font-weight: 500;
+    font-size: larger;
+}
+.contacts li {
+    list-style-type: none; 
+  }
+.contacts li a{
+    list-style-type: none;
+    color: #F1DFC5;
+    width: 24px;
+    height: auto;
+    font-size: 40px;
+    text-decoration: none;
+}
+.contacts {
+    margin: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/**Mobile Landscape **/
+
+@media screen and (min-width: 550px) and (max-width: 850px) {
+    #profile {
+        width: 200px;  
+        height: auto;    
+    }
+    .texts{
+        margin-left: 0;
+    }
+    .container {
+        display: flex;
+        justify-content: center;  
+        align-items: center;      
+        margin-left: 80px;
+        margin-right: 10px;      
+        gap: 20px
+      }
+    #logo{
+        border-radius: 60px;
+        height: 60px;
+        width: 60px;
+    }
+    .ri-menu-line{
+        font-size: 60px;
+    }
+}
+
+/***Tablet Portrait**/
+@media screen and (min-width:851px) and (max-width: 1000px)  {
+    .texts{
+        margin-left: 0;
+    }
+    #profile {
+        width: 250px;  
+        height: auto;    
+    }
+    .container {
+        display: flex;
+        justify-content: center;  
+        align-items: center;      
+        margin: 0 100px;      
+        gap: 30px
+      }
+    #logo{
+        border-radius: 70px;
+        height: 70px;
+        width: 70px;
+    }
+    .ri-menu-line{
+        font-size: 70px;
+    }
+    h1{
+        font-size:32px ;
+    }
+    p{
+        font-size: 18px;
+    }    
+}
+/**Tablet Landscape**/
+@media screen and (min-width: 1001px) and (max-width: 1280px) {
+    #menu {
+        display: none; 
+    }
+    .navs {
+        display: block; 
+        position: static; 
+        background-color: transparent; 
+        box-shadow: none; 
+        width: auto; 
+        margin: 50px;
+        padding: 20px;
+    }
+    nav ul {
+        flex-direction: row; 
+        justify-content: space-around;
+    }
+    nav ul li {
+        margin: 0 40px; 
+    }
+    header p {
+        margin-left: 70px;
+    }
+    .texts{
+        margin-left: 100px;
+        margin-bottom: 20px;
+    }
+    #profile {
+        width: 300px;  
+        height: auto;    
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #logo{
+        border-radius: 70px;
+        height: 70px;
+        width: 70px;
+    }
+    h1{
+        font-size:32px ;
+    }
+    p{
+        font-size: 18px;
+    }    
+}
+/**Desktop**/
+@media screen and (min-width: 1281px){
+    #menu {
+        display: none; 
+    }
+    .navs {
+        display: block; 
+        position: static; 
+        background-color: transparent; 
+        box-shadow: none; 
+        width: auto; 
+        margin: 50px;
+        padding: 20px;
+    }
+    nav ul {
+        flex-direction: row; 
+        justify-content: space-around;
+    }
+    nav ul li {
+        margin: 0 40px; 
+    }
+    .texts{
+        margin-left: 100px;
+        margin-bottom: 20px;
+    }
+    #profile {
+        width: 400px;  
+        height: auto;    
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #logo{
+        border-radius: 70px;
+        height: 70px;
+        width: 70px;
+    }
+    h1{
+        font-size:34px ;
+    }
+    p{
+        font-size: 20px;
+    }   
+    .hcontent{
+        margin: 50px 80px;
+        padding: 10px 50px 30px 50px;
+     } 
+     #quote {
+        margin-top: 60px;         
+        margin-left: 70px;
+    }
+}

@@ -1,0 +1,507 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/**Header **/
+
+header{
+    background-color:#1B2834;
+    padding-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out; 
+}
+#logo{
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    margin: 30px;
+}
+.ri-menu-line{
+    height: 1000px;
+    width: 50px;
+    margin: 30px;
+    font-size: 40px;
+    color: #F1DFC5;
+    cursor: pointer;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+}
+header h1{
+    margin: 60px 20px 5px 100px;
+}
+.navs{
+    display: none;
+    background-color: rgba(44, 62, 80, 0.541); 
+    position: absolute;
+    top: 90px;
+    right: 0;
+    width: 20%;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease;
+}
+#nav.active {
+    display: block;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+}
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: #F1DFC5;
+    text-decoration: none;
+    font-size: 16px;
+}
+/**Body styling**/
+
+h1, h2, h3{
+    font-family: 'Poppins', sans-serif;
+    color: #F1DFC5;
+    font-weight: bold;
+    padding: 20px 0 20px 0;
+}
+h1{
+    font: size 28px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #F2F2F2;
+    font-weight: 500;
+    background-color: #1F2E3D;
+    transition: background-color 0.5s ease-in-out;
+}
+p{
+    font-family: roboto;
+    color: #F2F2F2;
+    font-size: 12px;
+    line-height: 150%;
+    font-weight:500 ;
+}
+main{
+    padding: auto;
+}
+.hobby{
+    display: flex;
+    align-items: stretch;
+    gap: 0px;
+}
+
+#spiritual-service{
+    align-items: center;
+}
+.hobby h3{
+    padding-bottom: 3px;
+}
+.imgc{
+   width:175px;
+   height: auto;
+   margin: 20px 8px 0px 8px;
+   border-radius: 10px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+   float: left;
+}
+.textC   {
+    font-size: 10px; 
+  }
+  
+.img{
+    width:85px;
+    height: 113;
+    margin: 20px 8px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+#disc{
+    height: 113px;
+    width: 82px;
+}
+.gallery {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 10px; 
+  }
+.gallery h3 {
+    align-self: flex-start; 
+    margin-left: 30px;
+}    
+.row1, .row2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+  
+#gallery img{
+    width: 160px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px; /* Add some border radius for a softer look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); 
+}
+#Quotes {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 5px; 
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+  
+#Quotes h3 {
+    align-self: flex-start;
+    margin-left: 20px; 
+}
+
+  
+  
+/**footer style**/
+
+footer{
+    background-color: #1B2834;
+    padding: 10px 50px 10px 80px;
+}
+footer p{
+    font-weight: 500;
+    font-size: larger;
+}
+.contacts li {
+    list-style-type: none; 
+  }
+.contacts li a{
+    list-style-type: none;
+    color: #F1DFC5;
+    width: 24px;
+    height: auto;
+    font-size: 40px;
+    text-decoration: none;
+}
+.contacts {
+    margin: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+strong {
+    margin-bottom: 10px;
+    display: block;
+}
+
+/**Mobile Landscape **/
+
+@media screen and (min-width: 550px) and (max-width: 850px) {
+    #logo{
+        border-radius: 60px;
+        height: 60px;
+        width: 60px;
+    }
+    .ri-menu-line{
+        font-size: 60px;
+    }
+    .Hobbies{
+        display: flex;
+    }
+    #imgM ,  #imgB{
+        height: 200px;
+        width: 100px;
+    }
+    .textC   {
+        line-height: 150%;
+        font-size: 12px;
+      }
+    .column1 {
+        display: block;
+        margin-right: 30px;
+    }
+    .column2{
+        display: block;
+    }
+    .row1, .row2 {
+        display: flex;
+        flex-direction: row; 
+        margin-bottom: 10px;
+    }
+    
+    .Quotes{
+        display: flex;
+        justify-content: space-between; 
+    }
+    .columnA, .columnB {
+        display: block;
+    }
+    strong {
+        margin-bottom: 10px;
+        display: block;
+    }
+    main {
+        margin-left: 10px; 
+        margin-right: 10px; 
+      }
+}
+
+/***Tablet Portrait**/
+@media screen and (min-width:851px) and (max-width: 1000px)  {
+    #logo{
+        border-radius: 70px;
+        height: 70px;
+        width: 70px;
+    }
+    .ri-menu-line{
+        font-size: 70px;
+    }
+    h1{
+        font-size:32px ;
+    }
+    p{
+        font-size: 14px;
+    } 
+    .Hobbies{
+        display: flex;
+    }
+    .column1 {
+        display: block;
+        margin-right: 30px;
+    }
+    .column2{
+        display: block;
+    }
+    .row1, .row2 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px; 
+        margin-bottom: 10px;
+    }
+     #imgM ,  #imgB{
+        height: 154px;
+        width: 100px;
+    }
+    .textC   {
+        line-height: 160%;
+        font-size: 12px;
+      }
+    #gallery img{
+        width: 190px;
+        height: auto;
+    }
+    .Quotes{
+        display: flex;
+        justify-content: space-between; 
+    }
+    .columnA, .columnB {
+        display: block;
+    }
+    strong {
+        margin-bottom: 10px;
+        display: block;
+    }
+    main {
+        margin-left: 10px; 
+        margin-right: 10px; 
+      }
+}
+
+/**Tablet Landscape**/
+@media screen and (min-width: 1001px) and (max-width: 1280px) {
+    #menu {
+        display: none; 
+    }
+    .navs {
+        display: block; 
+        position: static; 
+        background-color: transparent; 
+        box-shadow: none; 
+        width: auto; 
+        margin: 50px;
+        padding: 20px;
+    }
+    nav ul {
+        flex-direction: row; 
+        justify-content: space-around;
+    }
+    nav ul li {
+        margin: 0 40px; 
+    }
+    header h1{
+        margin-left: 200px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .textC   {
+        line-height: 140%;
+        font-size: 12px;
+    }
+    .imgc{
+        height: auto;
+        width: 60%;
+    }
+    #imgM ,  #imgB{
+        height: 200px;
+        width: 90;
+    }
+    .Quotes{
+        display: flex;
+        justify-content: space-between; 
+        gap: 10px;
+    }
+    .columnA  {
+        display: flex;
+        gap: 10px;
+    }
+    .columnB{
+        display: flex;
+        gap: 10px;
+    }
+    .photos{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .row1{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .row2{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    #gallery img{
+        width: 250px;
+        height: auto;
+    }
+    .Hobbies{
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    .column1{
+        display: flex;
+        gap: 10px;
+    }
+    .column2{
+        display: flex;
+        gap: 10px;
+    }
+    main {
+        margin-left: 20px; 
+        margin-right: 20px; 
+    }
+    p{
+        font-family: roboto;
+        color: #F2F2F2;
+        font-size: 12px;
+        line-height: 150%;
+        font-weight:500 ;
+    }
+}
+/**Desktop**/
+@media screen and (min-width: 1281px){
+    #menu {
+        display: none; 
+    }
+    .navs {
+        display: block; 
+        position: static; 
+        background-color: transparent; 
+        box-shadow: none; 
+        width: auto; 
+        margin: 50px;
+        padding: 20px;
+    }
+    nav ul {
+        flex-direction: row; 
+        justify-content: space-around;
+    }
+    nav ul li {
+        margin: 0 40px; 
+    }
+    header h1{
+        margin-left: 200px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .textC   {
+        line-height: 150%;
+        font-size: 14px;
+    }
+    #imgM ,  #imgB{
+        height: 200px;
+        width: 100px;
+    }
+    .Quotes{
+        display: flex;
+        justify-content: space-between; 
+        gap: 10px;
+    }
+    .columnA  {
+        display: flex;
+        gap: 10px;
+    }
+    .columnB{
+        display: flex;
+        gap: 10px;
+    }
+    .photos{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .row1{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .row2{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    #gallery img{
+        width: 250px;
+        height: auto;
+    }
+    .Hobbies{
+        display: flex;
+        justify-content: space-between;
+    }
+    .column1{
+        display: flex;
+        gap: 10px;
+    }
+    .column2{
+        display: flex;
+        gap: 10px;
+    }
+    main {
+        margin-left: 20px; 
+        margin-right: 20px; 
+    }
+    p{
+        font-family: roboto;
+        color: #F2F2F2;
+        font-size: 12px;
+        line-height: 150%;
+        font-weight:500 ;
+    }
+}
